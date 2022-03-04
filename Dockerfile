@@ -10,6 +10,7 @@ COPY jupyter_notebook_config.py /home/mambauser/.jupyter/jupyter_notebook_config
 RUN [ "mkdir", "/home/mambauser/workdir" ]
 COPY 0_Foreword.ipynb /home/mambauser/workdir/
 COPY 1_QC_GWAS /home/mambauser/workdir/1_QC_GWAS
+COPY 2_Population_stratification /home/mambauser/workdir/2_Population_stratification
 
 # Set starting directory.
 USER root
